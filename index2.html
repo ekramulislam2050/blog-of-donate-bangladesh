@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>FAQ</title>
+</head>
+
+<body>
+    <header style="position:sticky;top:0;z-index: 1;">
+        <!-- nav-1-start -->
+        <div class="navbar bg-base-200">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <button class="rounded btn-xs bg-[#b4f461] sm:btn-sm md:btn-md lg:btn-lg">Home</button>
+                </div>
+            </div>
+            <div class="navbar-center">
+
+                <img class="btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/logo.png" alt="logo">
+
+                <button class="font-semibold btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:text-xl">Donate
+                    Bangladesh</button>
+            </div>
+            <div class="navbar-end">
+                <img class="btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/coin.png" alt="coin">
+                <button class=" btn-xs sm:btn-sm md:btn-md lg:btn-lg">5500 BDT</button>
+            </div>
+
+        </div>
+        <!-- nav-1-end -->
+    </header>
+    <main>
+      
+          <div class="flex gap-1 ml-5 lg:ml-16">
+              <h1 class="py-5 text-2xl font-bold">Important FAQ </h1>
+               <div>
+                <img src="./assets/icons8-question-50.png" alt="">
+               </div>
+          </div>
+        
+        <!-- accordion start  -->
+         <div class="w-11/12 mx-auto">
+        <div class="w-full join join-vertical">
+            <div class="border collapse collapse-arrow join-item border-base-300">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="text-xl font-medium collapse-title">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="border collapse collapse-arrow join-item border-base-300">
+                <input type="radio" name="my-accordion-4" />
+                <div class="text-xl font-medium collapse-title">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="border collapse collapse-arrow join-item border-base-300">
+                <input type="radio" name="my-accordion-4" />
+                <div class="text-xl font-medium collapse-title">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="border collapse collapse-arrow join-item border-base-300">
+                <input type="radio" name="my-accordion-4" />
+                <div class="text-xl font-medium collapse-title">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- accordion end  -->
+    </main>
+</body>
+
+</html>
