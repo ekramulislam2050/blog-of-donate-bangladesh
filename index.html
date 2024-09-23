@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header style="position: sticky;top:0;">
+    <header style="position:sticky;top:0;z-index: 1;">
         <!-- nave-bar start ----------- -->
         <!-- nav-1-start -->
         <div class="navbar bg-base-200">
@@ -27,12 +27,12 @@
 
                 <img class="btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/logo.png" alt="logo">
 
-                <button class="  btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:text-xl font-semibold">Donate
+                <button class="font-semibold btn-xs sm:btn-sm md:btn-md lg:btn-lg lg:text-xl">Donate
                     Bangladesh</button>
             </div>
             <div class="navbar-end">
                 <img class="btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/coin.png" alt="coin">
-                <button class="  btn-xs sm:btn-sm md:btn-md lg:btn-lg">5500 BDT</button>
+                <button class=" btn-xs sm:btn-sm md:btn-md lg:btn-lg">5500 BDT</button>
             </div>
 
         </div>
@@ -42,10 +42,10 @@
             <div class="navbar-start">
 
             </div>
-            <div class="navbar-center pt-5">
+            <div class="pt-5 navbar-center">
                 <button class="rounded btn-xs bg-[#b4f461] sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
                 <p class="mx-2"></p>
-                <button class="rounded btn-xs bg-base-200 sm:btn-sm md:btn-md lg:btn-lg">History</button>
+                <button class="border rounded btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
             </div>
             <div class="navbar-end">
 
@@ -55,14 +55,15 @@
         <!-- nav-2-end -->
         <!-- nave-bar end ----------- -->
     </header>
-    <main>
+    <main class="pt-10 ">
+
         <!-- card-1 start -->
-        <div class="card card-side flex-col lg:flex-row w-11/12 mx-auto">
+        <div class="flex-col w-11/12 mx-auto border card card-side lg:flex-row">
             <figure>
-                <img src="./assets/noakhali.png" alt="img" />
+                <img class="p-5" src="./assets/noakhali.png" alt="img" />
             </figure>
             <div class="card-body">
-                <div class="card-actions justify-start ">
+                <div class="justify-start card-actions ">
                     <button class=" btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
                         <img class=" btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/coin.png" alt="coin">
                         5500 BDT
@@ -72,14 +73,63 @@
                 <h2 class="card-title">Donate for flood of Noakhali,Bangladesh</h2>
                 <p>Requesting your help to ease the suffering of the flood victims in the recent flood in Noakhali.</p>
 
-                <input type="text" placeholder="Write donation amount" class="input input-bordered w-full  " />
+                <input type="text" placeholder="Write donation amount" class="w-full input input-bordered " />
 
-                <div class="card-actions justify-end">
+                <div class="justify-end card-actions">
                     <button class=" rounded py-3 btn-block bg-[#b4f461]">Donate Now</button>
                 </div>
             </div>
         </div>
         <!-- card-1 end -->
+        <!-- card-2 start -->
+        <div class="flex-col w-11/12 mx-auto my-5 border card card-side lg:flex-row">
+            <figure>
+                <img class="p-5" src="./assets/feni.png" alt="img" />
+            </figure>
+            <div class="card-body">
+                <div class="justify-start card-actions ">
+                    <button class=" btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+                        <img class=" btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/coin.png" alt="coin">
+                        5500 BDT
+                    </button>
+
+                </div>
+                <h2 class="card-title">Donate for flood of Feni,Bangladesh</h2>
+                <p>Requesting your help to ease the suffering of the flood victims in the recent flood in Noakhali.</p>
+
+                <input type="text" placeholder="Write donation amount" class="w-full input input-bordered " />
+
+                <div class="justify-end card-actions">
+                    <button class=" rounded py-3 btn-block bg-[#b4f461]">Donate Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- card-2 end -->
+        <!-- card-3 start -->
+        <div class="flex-col w-11/12 mx-auto mb-8 border card card-side lg:flex-row">
+            <figure>
+                <img class="p-5" src="./assets/quota-protest.png" alt="img" />
+            </figure>
+            <div class="card-body">
+                <div class="justify-start card-actions ">
+                    <button class=" btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+                        <img class=" btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/coin.png" alt="coin">
+                        5500 BDT
+                    </button>
+
+                </div>
+                <h2 class="card-title">Donate for injury of Quota movement</h2>
+                <p>Requesting your help to ease the suffering of the flood victims in the recent flood in Noakhali.</p>
+
+                <input type="text" placeholder="Write donation amount" class="w-full input input-bordered " />
+
+                <div class="justify-end card-actions">
+                    <button class=" rounded py-3 btn-block bg-[#b4f461]">Donate Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- card-3 end -->
+  
     </main>
 </body>
 
