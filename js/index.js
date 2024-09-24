@@ -14,8 +14,9 @@ document.getElementById("card-1-donate-btn").addEventListener("click",function()
     document.getElementById("card-1-bdt").innerText = currentCardOneBdt +' BDT' ;
     const availableNavBdt = getAvailableAmount("nav-bdt" );
     const currentNavBdt = availableNavBdt + donatedBdt;
-    document.getElementById("nav-bdt").innerText = currentNavBdt +' BDT'
-
+    document.getElementById("nav-bdt").innerText = currentNavBdt +' BDT';
+    giveCongratulation("my_modal_1")
+    
 })
 // card-2-------------------------------->
 document.getElementById("card-2-donate-btn").addEventListener("click",function(){
@@ -30,7 +31,7 @@ document.getElementById("card-2-donate-btn").addEventListener("click",function()
     const availableNavBdt = getAvailableAmount("nav-bdt" );
     const currentNavBdt = availableNavBdt + donatedBdt;
     document.getElementById("nav-bdt").innerText = currentNavBdt +' BDT'
-
+    giveCongratulation("my_modal_1")
 })
 // card-3------------------------------------->
 document.getElementById("card-3-donate-btn").addEventListener("click",function(){
@@ -45,5 +46,5 @@ document.getElementById("card-3-donate-btn").addEventListener("click",function()
     const availableNavBdt = getAvailableAmount("nav-bdt" );
     const currentNavBdt = availableNavBdt + donatedBdt;
     document.getElementById("nav-bdt").innerText = currentNavBdt +' BDT'
-
+    giveCongratulation("my_modal_1")
 })

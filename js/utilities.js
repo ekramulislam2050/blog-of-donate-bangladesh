@@ -8,3 +8,9 @@ function getAvailableAmount(id){
     const convertToNumber = parseFloat(availableAmount);
     return convertToNumber
 }
+
+function giveCongratulation (id){
+  const myModal = document.getElementById(id);
+  const showModal = myModal.showModal();
+  return showModal;
+}

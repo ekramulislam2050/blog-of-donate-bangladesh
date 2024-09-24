@@ -20,7 +20,8 @@
         <div class="navbar bg-base-200">
             <div class="navbar-start">
                 <div class="dropdown">
-                    <button id="blog-btn" class="rounded btn-xs bg-[#b4f461] sm:btn-sm md:btn-md lg:btn-lg">Blog</button>
+                    <button id="blog-btn"
+                        class="rounded btn-xs bg-[#b4f461] sm:btn-sm md:btn-md lg:btn-lg">Blog</button>
                 </div>
             </div>
             <div class="navbar-center">
@@ -73,7 +74,8 @@
                 <h2 class="card-title">Donate for flood of Noakhali,Bangladesh</h2>
                 <p>Requesting your help to ease the suffering of the flood victims in the recent flood in Noakhali.</p>
 
-                <input id="card-1-input-field" type="text" placeholder="Write donation amount" class="w-full input input-bordered " />
+                <input id="card-1-input-field" type="text" placeholder="Write donation amount"
+                    class="w-full input input-bordered " />
 
                 <div class="justify-end card-actions">
                     <button id="card-1-donate-btn" class=" rounded py-3 btn-block bg-[#b4f461]">Donate Now</button>
@@ -97,7 +99,8 @@
                 <h2 class="card-title">Donate for flood of Feni,Bangladesh</h2>
                 <p>Requesting your help to ease the suffering of the flood victims in the recent flood in Noakhali.</p>
 
-                <input id="card-2-input-field" type="text" placeholder="Write donation amount" class="w-full input input-bordered " />
+                <input id="card-2-input-field" type="text" placeholder="Write donation amount"
+                    class="w-full input input-bordered " />
 
                 <div class="justify-end card-actions">
                     <button id="card-2-donate-btn" class=" rounded py-3 btn-block bg-[#b4f461]">Donate Now</button>
@@ -112,7 +115,7 @@
             </figure>
             <div class="card-body">
                 <div class="justify-start card-actions ">
-                    <button id="card-3-bdt"  class=" btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+                    <button id="card-3-bdt" class=" btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
                         <img class=" btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/coin.png" alt="coin">
                         3500 BDT
                     </button>
@@ -121,15 +124,38 @@
                 <h2 class="card-title">Donate for injury of Quota movement</h2>
                 <p>Requesting your help to ease the suffering of the flood victims in the recent flood in Noakhali.</p>
 
-                <input id="card-3-input-field" type="text" placeholder="Write donation amount" class="w-full input input-bordered " />
+                <input id="card-3-input-field" type="text" placeholder="Write donation amount"
+                    class="w-full input input-bordered " />
 
                 <div class="justify-end card-actions">
-                    <button id="card-3-donate-btn" class=" rounded py-3 btn-block bg-[#b4f461]">Donate Now</button>
+                    <button id="card-3-donate-btn"  class=" rounded py-3 btn-block bg-[#b4f461]">Donate Now</button>
                 </div>
             </div>
         </div>
         <!-- card-3 end -->
-  
+        <!-- modal start ------------ -->
+        <section>
+            <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+            <dialog id="my_modal_1" class="modal">
+                <div class=" modal-box">
+                    <h3 class="text-2xl font-bold text-center">Congrates!</h3>
+                     <div class="flex justify-center">
+                        <img class="pt-2 text-center btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/coin.png" alt="coin">
+                     </div>
+                    <p class="py-4 text-center">You have donated for humankind</p>
+                    <h4 class="text-lg font-bold text-center">Successful</h4>
+                    <div class="flex justify-center modal-action">
+                        <form method="dialog text-center">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="text-center btn">Close confirmation</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
+        </section>
+         
+        <!-- modal start ------------ -->
+
     </main>
     <script src="./js/index.js"></script>
     <script src="./js/utilities.js"></script>
