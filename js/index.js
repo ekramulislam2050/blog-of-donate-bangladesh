@@ -3,7 +3,8 @@ document.getElementById("blog-btn").addEventListener("click",function(e){
    
 })
 //  card-1--------------------------->
-document.getElementById("card-1-donate-btn").addEventListener("click",function(){
+document.getElementById("card-1-donate-btn").addEventListener("click",function(e){
+   
     const donatedBdt = getDonateAmount("card-1-input-field");
     if(isNaN(donatedBdt) || 0>donatedBdt){
         alert("Invalid input")
@@ -17,7 +18,7 @@ document.getElementById("card-1-donate-btn").addEventListener("click",function()
     const currentNavBdt = availableNavBdt + donatedBdt;
     document.getElementById("nav-bdt").innerText = currentNavBdt +' BDT';
     giveCongratulation("my_modal_1")
-   
+    
 })
 // card-2-------------------------------->
 document.getElementById("card-2-donate-btn").addEventListener("click",function(){
@@ -26,7 +27,7 @@ document.getElementById("card-2-donate-btn").addEventListener("click",function()
         alert("Invalid input")
         return
     }
-    createElement(donatedBdt)
+    createElement(donatedBdt,"card-2-h2")
     const availableCardTwoBdt = getAvailableAmount("card-2-bdt");
     const currentCardTwoBdt = availableCardTwoBdt + donatedBdt;
     document.getElementById("card-2-bdt").innerText = currentCardTwoBdt +' BDT' ;
@@ -42,7 +43,7 @@ document.getElementById("card-3-donate-btn").addEventListener("click",function()
         alert("Invalid input")
         return
     }
-    createElement(donatedBdt)
+    createElement(donatedBdt,"card-3-h2")
     const availableCardThreeBdt = getAvailableAmount("card-3-bdt");
     const currentCardThreeBdt = availableCardThreeBdt + donatedBdt;
     document.getElementById("card-3-bdt").innerText = currentCardThreeBdt +' BDT';
@@ -58,7 +59,7 @@ document.getElementById("history-btn").addEventListener("click",function(e){
 
     e.target.style.background='rgb(187, 245, 112)';
     document.getElementById("donation-btn").style.background='none';
-    createElement()
+   
 });
 // donation button--------------------------->
 document.getElementById("donation-btn").addEventListener("click",function(e){
