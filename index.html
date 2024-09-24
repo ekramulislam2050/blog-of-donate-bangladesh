@@ -44,9 +44,10 @@
 
             </div>
             <div class="pt-5 navbar-center">
-                <button class="rounded btn-xs bg-[#b4f461] sm:btn-sm md:btn-md lg:btn-lg">Donation</button>
+                <button id="donation-btn"
+                    class="rounded btn-xs bg-[#b4f461] sm:btn-sm md:btn-md lg:btn-lg border">Donation</button>
                 <p class="mx-2"></p>
-                <button class="border rounded btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
+                <button id="history-btn" class="border rounded btn-xs sm:btn-sm md:btn-md lg:btn-lg">History</button>
             </div>
             <div class="navbar-end">
 
@@ -56,10 +57,10 @@
         <!-- nav-2-end -->
         <!-- nave-bar end ----------- -->
     </header>
-    <main class="pt-10 ">
+    <main class="pt-10 " id="main-tag">
 
         <!-- card-1 start -->
-        <div class="flex-col w-11/12 mx-auto border card card-side lg:flex-row">
+        <div id="card-1" class="flex-col w-11/12 mx-auto border card card-side lg:flex-row">
             <figure>
                 <img class="p-5" src="./assets/noakhali.png" alt="img" />
             </figure>
@@ -71,7 +72,7 @@
                     </button>
 
                 </div>
-                <h2 class="card-title">Donate for flood of Noakhali,Bangladesh</h2>
+                <h2 id="card-1-h2" class="card-title">Donate for flood of Noakhali,Bangladesh</h2>
                 <p>Requesting your help to ease the suffering of the flood victims in the recent flood in Noakhali.</p>
 
                 <input id="card-1-input-field" type="text" placeholder="Write donation amount"
@@ -84,7 +85,7 @@
         </div>
         <!-- card-1 end -->
         <!-- card-2 start -->
-        <div class="flex-col w-11/12 mx-auto my-5 border card card-side lg:flex-row">
+        <div id="card-2" class="flex-col w-11/12 mx-auto my-5 border card card-side lg:flex-row">
             <figure>
                 <img class="p-5" src="./assets/feni.png" alt="img" />
             </figure>
@@ -109,7 +110,7 @@
         </div>
         <!-- card-2 end -->
         <!-- card-3 start -->
-        <div class="flex-col w-11/12 mx-auto mb-8 border card card-side lg:flex-row">
+        <div id="card-3" class="flex-col w-11/12 mx-auto mb-8 border card card-side lg:flex-row">
             <figure>
                 <img class="p-5" src="./assets/quota-protest.png" alt="img" />
             </figure>
@@ -128,7 +129,7 @@
                     class="w-full input input-bordered " />
 
                 <div class="justify-end card-actions">
-                    <button id="card-3-donate-btn"  class=" rounded py-3 btn-block bg-[#b4f461]">Donate Now</button>
+                    <button id="card-3-donate-btn" class=" rounded py-3 btn-block bg-[#b4f461]">Donate Now</button>
                 </div>
             </div>
         </div>
@@ -139,9 +140,10 @@
             <dialog id="my_modal_1" class="modal">
                 <div class=" modal-box">
                     <h3 class="text-2xl font-bold text-center">Congrates!</h3>
-                     <div class="flex justify-center">
-                        <img class="pt-2 text-center btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/coin.png" alt="coin">
-                     </div>
+                    <div class="flex justify-center">
+                        <img class="pt-2 text-center btn-xs sm:btn-sm md:btn-md lg:btn-lg" src="./assets/coin.png"
+                            alt="coin">
+                    </div>
                     <p class="py-4 text-center">You have donated for humankind</p>
                     <h4 class="text-lg font-bold text-center">Successful</h4>
                     <div class="flex justify-center modal-action">
@@ -153,8 +155,13 @@
                 </div>
             </dialog>
         </section>
-         
+
         <!-- modal start ------------ -->
+         <!-- history section -->
+          <div id="history-section" class="hidden" >
+            
+          </div>
+         <!-- history section -->
 
     </main>
     <script src="./js/index.js"></script>
